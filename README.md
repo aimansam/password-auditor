@@ -1,12 +1,11 @@
 # Password Auditor
 
 ```text
-       ______________
-      /              \\
-     /   __________   \\
-    |   /          \\   |   PASSWORD AUDITOR
-    |   \\__________/   |   measure strength privately
-     \\______________/
+########     ######     ########   ######## ##      ##   ######   ########   ########  
+##      ## ##      ## ##         ##         ##      ## ##      ## ##      ## ##      ##
+########   ##      ##   ######     ######   ##  ##  ## ##      ## ########   ##      ##
+##         ##########         ##         ## ## ####  #### ##      ## ##    ##   ##      ##
+##         ##      ## ########   ########   ##      ##   ######   ##      ## ########  
 ```
 
 Password security auditor in Python. Analyze password strength, detect common patterns, keyboard walks, dictionary words, and estimate entropy.
