@@ -28,19 +28,19 @@ pip install -e .
 Audit a password:
 
 ```bash
-python auditor.py "MyP@ssw0rd!"
+password-auditor "MyP@ssw0rd!"
 ```
 
 Audit multiple passwords from a file:
 
 ```bash
-python auditor.py --file passwords.txt
+password-auditor --file passwords.txt
 ```
 
 Check against common passwords:
 
 ```bash
-python auditor.py --check-common "password123"
+password-auditor --no-breach "password123"
 ```
 
 ## API Usage
@@ -57,9 +57,9 @@ print(f"Issues: {result.issues}")
 ## Requirements
 
 - Python 3.9+
-- No external dependencies (stdlib only)
+- `requests` for the optional HIBP k-anonymity check
+- JSON output redacts password values
 
 ## License
 
 MIT
-

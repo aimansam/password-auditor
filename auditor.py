@@ -448,7 +448,8 @@ Examples:
         output = []
         for r in results:
             output.append({
-                "password": r.password,
+                # Never emit credentials. Results are safe to persist or pipe.
+                "password": "[redacted]",
                 "strength": r.strength_level.name,
                 "score": r.score,
                 "entropy_bits": r.entropy_bits,
